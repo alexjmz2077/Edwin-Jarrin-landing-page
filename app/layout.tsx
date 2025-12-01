@@ -67,20 +67,39 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Edwin Jarrín Rivadeneira",
-              jobTitle: "Asambleísta",
-              description: "Asambleísta del Ecuador por la provincia de Morona Santiago",
-              url: "https://www.edwinjarrin.com",
-              image: "https://www.edwinjarrin.com/logo-Edwin.png",
-              sameAs: [
-                "https://www.facebook.com/edwinjarrinrivadeneira",
-                "https://www.instagram.com/edwinjarrinec/",
-                "https://x.com/edwinjarrinec"
-              ],
-            }),
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Edwin Jarrín Rivadeneira",
+                jobTitle: "Asambleísta",
+                description: "Asambleísta del Ecuador por la provincia de Morona Santiago",
+                url: "https://www.edwinjarrin.com",
+                image: "https://www.edwinjarrin.com/logo-Edwin.png",
+                sameAs: [
+                  "https://www.facebook.com/edwinjarrinrivadeneira",
+                  "https://www.instagram.com/edwinjarrinec/",
+                  "https://x.com/edwinjarrinec"
+                ],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Edwin Jarrín Rivadeneira",
+                url: "https://www.edwinjarrin.com",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.edwinjarrin.com/logo-Edwin.png",
+                  width: 512,
+                  height: 512
+                },
+                sameAs: [
+                  "https://www.facebook.com/edwinjarrinrivadeneira",
+                  "https://www.instagram.com/edwinjarrinec/",
+                  "https://x.com/edwinjarrinec"
+                ],
+              }
+            ]),
           }}
         />
       </head>
